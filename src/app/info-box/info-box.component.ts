@@ -9,6 +9,7 @@ export class InfoBoxComponent implements OnInit {
 
   @Input() Title!: string;
   @Input() Desc!: string;
+  @Input() ImgUrl!: string;
 
   constructor() { }
 
