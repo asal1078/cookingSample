@@ -1,4 +1,4 @@
-<div class="info-box" (mouseenter)="makeImageMaxSize()" (mouseleave)="makeImageMinSiza()">
+<div class="info-box" (mouseenter)="makeTransition()" (mouseleave)="backToNormal()">
     <div class="container">
 
         <div class="row justify-content-center">
@@ -13,12 +13,12 @@
             <div class="col-12 info-box__image-col">
                 <img 
                 [src]="ImgUrl" 
-                [ngClass] = " maxImage == true ? 'info-img__max' : '' "
+                [ngClass] = " transitionElements == true ? 'info-img__max' : '' "
                 class="mt-2 info-img"
                 [alt]="Title">
             </div>
 
-            <div class="col-12 info-desc mt-4" [ngClass] = " maxImage == true ? 'info-desc__black-color' : '' ">
+            <div class="col-12 info-desc mt-4" [ngClass] = " transitionElements == true ? 'info-desc__black-color' : '' ">
                 {{Desc}}
             </div>
         </div>

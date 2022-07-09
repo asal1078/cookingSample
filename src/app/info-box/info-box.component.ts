@@ -11,22 +11,22 @@ export class InfoBoxComponent implements OnInit {
   @Input() Desc!: string;
   @Input() ImgUrl!: string;
   
-  maxImage: boolean = false;
-  minImage: boolean = true;
+  transitionElements: boolean = false;
+  backToNormalElements: boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  makeImageMaxSize(){
-    this.minImage = false;
-    this.maxImage = true;
+  makeTransition(){
+    this.backToNormalElements = false;
+    this.transitionElements = true;
   }
 
-  makeImageMinSiza(){
-    this.maxImage = false;
-    this.minImage = true;
+  backToNormal(){
+    this.transitionElements = false;
+    this.backToNormalElements = true;
   }
 
 }
