@@ -1,0 +1,10 @@
+.button-more {
+    text-decoration: none;
+    color: rgb(189, 34, 34);
+    transition: all 0.1  s;
+}
+
+.button-more:hover {
+    font-weight: bolder;
+    color: brown;
+}

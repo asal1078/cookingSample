@@ -1,12 +1,13 @@
 .info-box {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    height: 500px;
+    height: 470px;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.171);
     transition: all 0.5s;
-    background-color: rgba(167, 167, 167, 0.034);
 }
 
 .info-box:hover {
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 20px;
 }
@@ -19,6 +20,7 @@
     border-radius: 5%;
     width: 90%;
     transition: all 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .info-img__max {
@@ -32,5 +34,10 @@
 
 .info-desc {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(139, 139, 139);
+    color: rgb(255, 255, 255);
+    transition: color 0.5s;
+}
+
+.info-desc__black-color {
+    color: black;
 }

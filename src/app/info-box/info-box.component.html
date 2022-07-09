@@ -18,8 +18,14 @@
                 [alt]="Title">
             </div>
 
-            <div class="col-12 info-desc mt-4">
+            <div class="col-12 info-desc mt-4" [ngClass] = " maxImage == true ? 'info-desc__black-color' : '' ">
                 {{Desc}}
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-2">
+            <div class="col-12">
+                <a href="#" class="button-more">Learn How!</a>
             </div>
         </div>
     </div>
