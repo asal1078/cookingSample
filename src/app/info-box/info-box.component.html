@@ -1,19 +1,19 @@
-<div class="info-box">
+<div class="info-box" (mouseenter)="makeImageMaxSize()" (mouseleave)="makeImageMinSiza()">
     <div class="container">
 
         <div class="row justify-content-center">
 
             <div class="col-12">
-                <h2 
+                <h3 
                 class="info-title mt-3">
                     {{Title}}
-                </h2>
+                </h3>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 info-box__image-col">
                 <img 
                 [src]="ImgUrl" 
-                width="100%" 
+                [ngClass] = " maxImage == true ? 'info-img__max' : '' "
                 class="mt-2 info-img"
                 [alt]="Title">
             </div>
