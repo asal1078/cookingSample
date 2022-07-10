@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InfoBoxComponent } from './info-box/info-box.component';
 import { HeaderComponent } from './header/header.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';  
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlickCarouselModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
