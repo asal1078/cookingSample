@@ -1,0 +1,30 @@
+.top-menu__fram {
+    height: 30px;
+}
+
+.top-menu__item {
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgba(95, 158, 160, 0.637);
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.top-menu__item:hover {
+    background-color: cadetblue;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.top-menu__line {
+    background-color: white;
+    height: 3px;
+}
+
+#chosenItem {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.397);
+}

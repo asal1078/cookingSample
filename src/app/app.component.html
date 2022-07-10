@@ -4,6 +4,11 @@
   <div class="row">
     <app-header></app-header>
   </div>
+  <div class="row mt-3">
+    <div class="col-12">
+      <app-top-menu></app-top-menu>
+    </div>
+  </div>
   <div class="row justify-content-center mt-3 mb-4">
     <div *ngFor="let infoBox of infoBoxes" class="col-5 mt-4">
       <app-info-box [Title]="infoBox.Title" [Desc]="infoBox.Desc" [ImgUrl]="infoBox.ImgUrl"></app-info-box>
